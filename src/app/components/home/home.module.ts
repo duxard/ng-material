@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -11,7 +13,9 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
     CommonModule,
     MatSlideToggleModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule
   ]
 })
 export class HomeModule { }
