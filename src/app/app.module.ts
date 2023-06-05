@@ -9,12 +9,15 @@ import { FormsModule } from '@angular/forms';
 
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { CollectionsComponent } from './components/cdk/collections/collections.component';
+import { AccordionComponent } from './components/cdk/accordion/accordion.component';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClipboardComponent,
-    CollectionsComponent
+    CollectionsComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { CollectionsComponent } from './components/cdk/collections/collections.c
     BrowserAnimationsModule,
     HomeModule,
     FormsModule,
-    ClipboardModule
+    ClipboardModule,
+    CdkAccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
