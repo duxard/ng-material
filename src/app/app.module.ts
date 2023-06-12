@@ -11,13 +11,16 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 import { CollectionsComponent } from './components/cdk/collections/collections.component';
 import { AccordionComponent } from './components/cdk/accordion/accordion.component';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { DragAndDropComponent } from './components/cdk/drag-and-drop/drag-and-drop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClipboardComponent,
     CollectionsComponent,
-    AccordionComponent
+    AccordionComponent,
+    DragAndDropComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
     HomeModule,
     FormsModule,
     ClipboardModule,
-    CdkAccordionModule
+    CdkAccordionModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

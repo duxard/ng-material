@@ -1,0 +1,17 @@
+:host {
+  .box {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  .draggable {
+    width: 150px;
+    height: 150px;
+    background: green;
+    cursor: pointer;
+  }
+}
